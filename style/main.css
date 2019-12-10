@@ -1,0 +1,99 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+nav{
+	background-color: rgba(0,0,0,0.6);
+	font-family: "lato", sans-serif;
+	color: white;
+}
+nav .navbar-brand{
+	margin-left: 10%;
+	padding-bottom: 10px;
+	padding-right: 100px; 
+}
+.second-link-back{
+	top: 0;
+}
+.second-link-back:hover:{
+	color: dodgerblue;
+}
+#myLinks{
+	display: none;
+}
+#myLinks {
+  margin-top: 50pc
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+}
+.mmfees{
+	width: 100%;
+	margin-top: 20px;
+}
+#display{
+	width: 90%;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+	border: 1px solid dodgerblue;
+	margin-left: 5%;
+	margin-top: 50px;
+	height: 70px;
+	border-radius: 1px;
+	background-color: white;
+	color: dodgerblue;
+}
+input{
+	margin-top: 5px;
+}
+input[type="text"]{
+	width: 90%;
+	margin-left: 5%;
+	height: 8vh;
+	border-radius: 1px;
+	border: none;
+	border: 1px solid dodgerblue;
+}
+input[placeholder="Enter the Amount in kwacha"]{
+	text-align: center;
+	color: #000;
+}
+.button{
+	width: 50%;
+	margin-top: 5px;
+	height: 7vh;
+	border: none;
+	color: white;
+	font-size: 20px;
+	background-color: dodgerblue;
+	margin-left: 25%;
+	border-radius: 1px;
+	box-shadow: 4px 5px lightgrey;
+}
+.click, .cls:hover{
+	cursor: pointer;
+}
+button:hover{
+	background-color: white;
+	color: dodgerblue;
+	cursor: pointer;
+	border: 1px solid dodgerblue;
+}
+.head h4{
+	margin-top: 10px;
+	margin-left: 5%;
+	font-family: arial, sans-serif;
+}
+.navbar-brand{
+	padding-top: 15px;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+.navbar-brand a{
+	color: white;
+	text-decoration-line: none;
+}
