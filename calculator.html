@@ -18,25 +18,48 @@
 		<a class="second-link-back" href="index.html"><i><img src="style/images/arrow.PNG" style="width: 10%;"></i>Go Back</a>
 	</div>
 </nav>
+<script>
+	function myClick(a) {
+		myForm.display.value+=a;
+	}
+	function equalto() {
+		myForm.display.value=eval(myForm.display.value);
+	}
+	function allClear() {
+		myForm.display.value= " ";
+	}
+	function del() {
+		var back = myForm.display.value;
+		myForm.display.value=back.substr(0,back.length-1);
+	}
+</script>
 
 <section class="container-fluid">
 	<div class="row">
-		<div class="form-group col-lg-12 mt-5">
-			<input type="number" id="amountPlan" name="amount" placeholder="Enter the amount of money" class="form-control">
-		</div>
-		<div class="form-group col-lg-12 mt-2">
-			<input type="submit" name="amount" id="click" onclick="planMoney()" value="Plan" class="form-control btn btn-primary">
-		</div>
-
-		<div class="col-sm-12">
-			<p id="show" >Amount</p>
-			<p id="showTitle" ></p>
-			<p id="showMe" ></p>
-			<p id="showBills" ></p>
-			<p id="showBus" ></p>
-			<p id="showInvestment" ></p>
-			<p id="showleisure"></p>
-		</div>
+		<form name="myForm">
+			<input type="text" name="display" id="disp"><br><br>
+			<div class="btn">
+			<input type="button" name="btn7" value="7" onclick="myClick('7')">
+			<input type="button" name="btn8" value="8" onclick="myClick('8')">
+			<input type="button" name="btn9" value="9" onclick="myClick('9')">
+			<input type="button" name="btndel" value="DEL" onclick="del()">
+			<input type="button" name="btnac" value="AC" onclick="allClear()">
+			<input type="button" name="btn4" value="4" onclick="myClick('4')">
+			<input type="button" name="btn5" value="5" onclick="myClick('5')">
+			<input type="button" name="btn6" value="6" onclick="myClick('6')">
+			<input type="button" name="btnsub" value="-" onclick="myClick('-')">
+			<input type="button" name="btnadd" value="+" onclick="myClick('+')">
+			<input type="button" name="btn1" value="1" onclick="myClick('1')">
+			<input type="button" name="btn2" value="2" onclick="myClick('2')">
+			<input type="button" name="btn3" value="3" onclick="myClick('3')">
+			<input type="button" name="btndiv" value="%" onclick="myClick('/')">
+			<input type="button" name="btntimes" value="x" onclick="myClick('*')">
+			<input type="button" name="btnzerozero" value="00" onclick="myClick('00')">
+			<input type="button" name="btnzero" value="0" onclick="myClick('0')">
+			<input type="button" name="btnpoint" value="." onclick="myClick('.')">
+			<input id="equals" type="button" name="btnequal" value="=" onclick="equalto('=')">
+			</div>
+		</form>
 	</div>
 </section>
 

@@ -19,18 +19,21 @@
 			}
 		}
 	
-
+/*
 	document.getElementById('cls').addEventListener('click', function(){
 		document.getElementById('display').innerHTML = "The charged fee is: K";
 		var value = "Enter the Amount in kwacha" 
 		document.getElementById('amount').value = null;
-	});
-
-document.getElementById('next').addEventListener('click', function(){
-		alert("hello");
-	})
+	});*/
 
 
+(function() {
+document.querySelector('#amountPlan').addEventListener('keydown', function(e){
+			if(e.code === "Enter"){
+				planMoney();
+				console.log("clicked");			}
+		});
+})();
 
 
 
@@ -39,7 +42,7 @@ function planMoney() {
 	var money = document.getElementById('amountPlan').value;
 	if (money == "!@#$%&*{}+_)("){
 		document.getElementById('show').innerHTML = "Enter the Valid Money";
-	}
+	}else{
 	document.getElementById('amountPlan').value = null;
 
 	document.getElementById('show').innerHTML = "Your Money is: K"+money;
@@ -55,7 +58,8 @@ function planMoney() {
 		document.getElementById('showMe').innerHTML = "Disaster account: K "+fans;
 	}
 
-//Business account 
+//Business account
+
 
 var ansBus = 40/100;
 	var fansBus = ansBus * money;
@@ -64,8 +68,47 @@ var ansBus = 40/100;
 		var convertBus = fansBus*10;
 		document.getElementById('showBus').innerHTML = convertBus+" ngwe";
 	}else{
-		document.getElementById('showbBus').innerHTML = "K "+fansBus;
+		document.getElementById('showBus').innerHTML = "Business Account: K "+fansBus;
 	}
 
+//investment account
+
+var investment = 15/100;
+	var investmentf = investment * money;
+
+	if (investmentf == 0.1 || investmentf == 0.2 || investmentf == 0.3 || investmentf == 0.4 || investmentf == 0.5 || investmentf == 0.6 || investmentf == 0.7 || investmentf == 0.8 || investmentf == 0.9) {
+		var convertInvestment = investmentf*10;
+		document.getElementById('showInvestment').innerHTML = convertInvestment+" ngwe";
+	}else{
+		document.getElementById('showInvestment').innerHTML = "Investment Account: K "+investmentf;
+	}
+
+//Bills/ Expense account
+
+
+var bills = 30/100;
+	var fbills = bills * money;
+
+	if (fbills == 0.1 || fbills == 0.2 || fbills == 0.3 || fbills == 0.4 || fbills == 0.5 || fbills == 0.6 || fbills == 0.7 || fbills == 0.8 || fbills == 0.9) {
+		var convertBills = fbills*10;
+		document.getElementById('showBills').innerHTML = convertBills+" ngwe";
+	}else{
+		document.getElementById('showBills').innerHTML = "Expense Account: K "+fbills;
+	}
+
+
+//leisure
+
+
+var leisure = 5/100;
+	var leisuref = leisure * money;
+
+	if (leisuref == 0.1 || leisuref == 0.2 || leisuref == 0.3 || leisuref == 0.4 || leisuref == 0.5 || leisuref == 0.6 || leisuref == 0.7 || leisuref == 0.8 || leisuref == 0.9) {
+		var convertleisure = leisuref*10;
+		document.getElementById('showleisure').innerHTML = convertleisure+" ngwe";
+	}else{
+		document.getElementById('showleisure').innerHTML = "Vacation Account: K "+leisuref;
+	}
+}
 }
 
