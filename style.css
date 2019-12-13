@@ -1,0 +1,39 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+body{
+	background-image: url(pic.PNG);
+	background-attachment: fixed;
+	background-size: cover;
+}
+nav{
+	background-color: grey;
+	width: 100%;
+	position: sticky;
+	top: 0;
+}
+ul{
+	margin-left: 60%;
+}
+ul li{
+	display: inline-block;
+	padding: 14px 16px;
+	color: white;
+}
+section{
+	height: 10vh;
+	margin-top: 10px;
+	width: 100%;
+} 
+p{
+	margin-top: 100px;
+	border-radius: 2px;
+	float: left;
+	width: 30%;
+	padding: 10px;
+	margin-left: 2.5%;
+	background-color: white;
+}

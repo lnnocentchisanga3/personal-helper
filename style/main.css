@@ -21,6 +21,19 @@ nav{
   height: 500px;
   color: white;
 }
+/*.question{
+	float: right;
+	margin-right: 2rem;
+	margin-top: -2rem;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 1rem;
+	background-color: black;
+}
+.question a{
+	color: white;
+	text-decoration-line: none;
+}*/
 .mmfees{
 	width: 100%;
 	margin-top: 20px;
@@ -267,18 +280,12 @@ input[value="+ Add"]{
 	margin-top: 1rem;
 	width: 50%;
 }
-.click:hover{
-	background-color: dodgerblue;
-	
-	border-radius: 6rem;
-	border: 1px solid dodgerblue;
-}
 .click a{
 	text-decoration-line: none;
 	color: black;
 }
 .click a:hover{
-	color: white;
+	text-decoration-line: underline;
 }
 img{
 	width: 50%;
